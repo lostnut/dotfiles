@@ -15,6 +15,9 @@ font font
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#Automatic back and forth
+workspace_auto_back_and_forth yes
+
 # start a terminal
 bindsym $mod+Return exec urxvtc
 
