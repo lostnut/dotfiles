@@ -1,3 +1,6 @@
+#Git config file
+#author : lostnut
+#General configuration
 [user]
 	name = lostnut
 	email = lostnut@pm.me
@@ -7,6 +10,7 @@
 [alias]
 	last = log -1 HEAD
 	lo = log --graph --all --decorate --date-order
+#Merge tools
 [merge]
 	tool = meld
 [mergetool "meld"]
@@ -14,6 +18,7 @@
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
+#Colors
 [color]
 	branch = auto
 	diff = auto
