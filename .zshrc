@@ -58,6 +58,7 @@ alias ll="ls -als"
 export EDITOR="vim"
 export PAGER="less -iM"
 export VISUAL="vim"
+export FZF_DEFAULT_COMMAND="fd -I"
 
 #Directory stack
 #Auto register dir in pushd
