@@ -70,6 +70,7 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 !Disable PERL
+URxvt.perl-ext:
 URxvt.perl-ext-common:
 
 !-----------------------------------------------------------------------
