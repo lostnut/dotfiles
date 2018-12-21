@@ -133,8 +133,8 @@ set $base0E #A3BE8C
 set $base0F #B48EAD
 # Basic bar configuration using the Base16 variables.
 bar {
-    status_command i3status
-
+    font pango:Source Code Pro 11
+    status_command i3status-rs ~/.config/i3/config.toml
     colors {
         background $base00
         separator  $base01
