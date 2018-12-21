@@ -43,10 +43,14 @@ setopt HIST_NO_FUNCTIONS
 #Remove this annoying BEEP
 setopt NO_HIST_BEEP
 
+##Colors
+eval $(dircolors $HOME/.colors/dirs)
+
 ##Alias
 #Complete alias pls
 setopt COMPLETE_ALIASES
 #aliases
+alias ls='ls --color=auto'
 alias ll="ls -als"
 
 ##Environnement variables
@@ -63,17 +67,6 @@ DIRSTACKSIZE=10
 #Ignore same directories
 setopt PUSHD_IGNORE_DUPS
 
-##Completion
-#Initialization
-autoload -U compinit
-compinit
-# Menu completion
-zstyle ':completion:*' menu select
-#Rehash
-zstyle ':completion:*' rehash true
-# Context : :completion:function:completer:command:argument:tag
-
-
 ##Prompt
 #Colors
 autoload -U colors
@@ -85,3 +78,15 @@ RPS1="[%D{%L:%M}]"
 
 #Emacs keybinding 
 bindkey -e
+
+##Completion
+#Initialization
+autoload -U compinit
+compinit
+# Menu completion
+zstyle ':completion:*' menu select
+#Rehash
+zstyle ':completion:*' rehash true
+#Colors
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+# Context : :completion:function:completer:command:argument:tag
