@@ -77,11 +77,7 @@ URxvt.perl-ext-common:
 !                        Font settings 
 !-----------------------------------------------------------------------
 !! Fonts
-#define fonts	 xft:Source Code Pro:size=12:style=Regular, \
-		 xft:Font Awesome 5 Free:style=Regular, \
-		 xft:Font Awesome 5 Free:style=Solid, \
-		 xft:Font Awesome 5 Brands:style=Regular
-
+#define fonts	 xft:Source Code Pro:size=12:style=Regular
 #define boldfonts xft:Source Code Pro:size=12:style=Bold
 
 URxvt*font:              fonts
