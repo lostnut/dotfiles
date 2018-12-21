@@ -50,8 +50,9 @@ eval $(dircolors $HOME/.colors/dirs)
 #Complete alias pls
 setopt COMPLETE_ALIASES
 #aliases
-alias ls='ls --color=auto'
 alias ll="ls -als"
+alias ls='ls --color=auto'
+alias vim="vim --servername VIM"
 
 ##Environnement variables
 #editors
