@@ -1,0 +1,21 @@
+[user]
+	name = lostnut
+	email = lostnut@pm.me
+[core]
+	editor = vim
+	pager = less -i
+[alias]
+	last = log -1 HEAD
+	lo = log --graph --all --decorate --date-order
+[merge]
+	tool = meld
+[mergetool "meld"]
+	cmd = meld $LOCAL $MERGED $REMOTE
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = true
