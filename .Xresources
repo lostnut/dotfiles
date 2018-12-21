@@ -1,0 +1,96 @@
+! Xresources
+! author lostnut
+!-----------------------------------------------------------------------
+!                         Xft settings
+!-----------------------------------------------------------------------
+! Set font parameters
+! Documentation at : ArchlinuxWiki/Font_Configuration
+
+!Target dots per inch/ change size
+!Check with xdpyinfo | grep dots (package xorg-xdpyinfo)
+Xft.dpi:                96
+!Use autohinter instead of normal hinter
+!Fonts now have good hinting information, keep it
+Xft.autohint:           0
+!Whether the rasterizer should use hinting
+Xft.hinting:            true
+!Whether glyphs can be antialiased 
+!Increase the apparent resolution of font edges 
+Xft.antialias:          true 
+!Automatic hinting style
+!Available value : hintnone, hintslight, hintmedium, hintfull
+Xft.hintstyle:          hintslight
+!subpixel geometry, adjust for each lcd monitpor
+!Available value: rgb, bgr, Vrgb, Vbgr
+Xft.rgba:               rgb
+!Type of LCD filter
+Xft.lcdfilter:          lcddefault
+
+
+!-----------------------------------------------------------------------
+!                        Color settings
+!-----------------------------------------------------------------------
+!! Colors
+!This include color theme, foreground, background and cursor color
+!Based on nord theme
+#include "/home/lostnut/.colors/nord"
+
+!-----------------------------------------------------------------------
+!                        URxvt settings 
+!-----------------------------------------------------------------------
+! Set urxvt parameters
+! All available settingds and details are available in urxvt-man pages
+! See urxvt(1) and urxvt(7) (FAQ)
+
+! Set borders
+URxvt.internalBorder:    10
+URxvt.externalBorder:    0
+
+!Transparency, compton can manage it too
+!urxvt*shading:          100
+!URxvt.depth:             32
+
+!History
+URxvt.saveLines:         10000
+
+! Default geometry, not use with a wm
+!URxvt*geometry:          80x20
+
+! Name of the terminal, removed by wm if needed
+URxvt*terminalName:      rxvt-unicode
+
+! Remove beep
+URxvt*visualBell:        false
+
+!! Scrollbar
+!Remove scrollbar and give it the good behavior
+URxvt.scrollBar:         false
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
+
+!Disable PERL
+URxvt.perl-ext-common:
+
+!-----------------------------------------------------------------------
+!                        Font settings 
+!-----------------------------------------------------------------------
+!! Fonts
+#define fonts	 xft:Source Code Pro:size=12:style=Regular, \
+		 xft:Font Awesome 5 Free:style=Regular, \
+		 xft:Font Awesome 5 Free:style=Solid, \
+		 xft:Font Awesome 5 Brands:style=Regular
+
+#define boldfonts xft:Source Code Pro:size=12:style=Bold
+
+URxvt*font:              fonts
+URxvt*boldMode:          true
+URxvt*boldFont:          boldfonts
+URxvt*letterSpace:	 0
+
+!-----------------------------------------------------------------------
+!                        Cursor settings
+!-----------------------------------------------------------------------
+
+!! Cursor
+Xcursor.theme:             Paper
