@@ -186,7 +186,7 @@ bindsym $mod+Shift+x exec --no-startup-id i3lock
 assign [class="Firefox"] $ws2
 assign [class="jetbrains-idea-ce"] $ws4
 assign [class="Thunderbird"] $ws9
-assign [class="Spotify"] $ws10
+for_window [class="Spotify"] move to workspace $ws10, workspace --no-auto-back-and-forth $ws10
 
 ## Launch programs
 exec_always --no-startup-id feh --bg-fill ~/.wallpaper/nord.jpg
