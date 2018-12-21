@@ -1,4 +1,4 @@
-rofi.terminal:      urxvt
+rofi.terminal:      urxvtc
 rofi.sidebar-mode:  true
 rofi.theme:         nord
 rofi.show-icons: true
