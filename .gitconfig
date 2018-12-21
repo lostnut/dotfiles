@@ -4,6 +4,7 @@
 [user]
 	name = lostnut
 	email = lostnut@pm.me
+	signingkey = 6734CC402C143542FB83A84BC5D009FB2905F504
 [core]
 	editor = vim
 	pager = less -i
@@ -24,3 +25,5 @@
 	diff = auto
 	status = auto
 	ui = true
+[commit]
+	gpgsign = true
