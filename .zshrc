@@ -56,10 +56,12 @@ alias vim="vim --servername VIM"
 
 ##Environnement variables
 #editors
+export BROWSER="firefox"
+export CC="clang"
 export EDITOR="vim"
+export FZF_DEFAULT_COMMAND="fd -I"
 export PAGER="less -iM"
 export VISUAL="vim"
-export FZF_DEFAULT_COMMAND="fd -I"
 
 #Directory stack
 #Auto register dir in pushd
