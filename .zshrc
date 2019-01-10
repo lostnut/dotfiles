@@ -60,6 +60,7 @@ export BROWSER="firefox"
 export CC="clang"
 export EDITOR="vim"
 export FZF_DEFAULT_COMMAND="fd -I"
+export JAVA_HOME="/usr/lib/jvm/default"
 export PAGER="less -iM"
 export VISUAL="vim"
 
